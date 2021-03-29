@@ -47,7 +47,7 @@
 
 (defrule goal-achieve
 	(declare (salience 10))
-	?f <- (numbers $?ini ?n $?end)
+	?f <- (numbers ?n)
 	(goalNumber ?n)
 	=>
 	(printout t "He encontrado la solucion " crlf)
