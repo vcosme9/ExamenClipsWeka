@@ -13,7 +13,7 @@
 	(printout t "hago una suma " crlf)	
 )
 
-(defrule Subtraction-operation
+(defrule subtraction-operation
 	?f <- (numbers $?ini ?n1 ?n2 $?end)
 	(goalNumber ?g)
 		(test (<= (- ?n1 ?n2) ?g))
